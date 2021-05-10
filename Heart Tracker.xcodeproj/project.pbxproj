@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99CA5B862648EADC00642E07 /* Heart Tracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 99CA5B852648EADC00642E07 /* Heart Tracker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99CA5B8B2648EADD00642E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CA5B8A2648EADD00642E07 /* Assets.xcassets */; };
+		99CA5B922648EADD00642E07 /* Heart Tracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99CA5B912648EADD00642E07 /* Heart Tracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99CA5B972648EADD00642E07 /* Heart_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B962648EADD00642E07 /* Heart_TrackerApp.swift */; };
+		99CA5B992648EADD00642E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B982648EADD00642E07 /* ContentView.swift */; };
+		99CA5B9B2648EADD00642E07 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B9A2648EADD00642E07 /* NotificationController.swift */; };
+		99CA5B9D2648EADD00642E07 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B9C2648EADD00642E07 /* NotificationView.swift */; };
+		99CA5B9F2648EADD00642E07 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B9E2648EADD00642E07 /* ComplicationController.swift */; };
+		99CA5BA12648EADD00642E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CA5BA02648EADD00642E07 /* Assets.xcassets */; };
+		99CA5BA42648EADD00642E07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CA5BA32648EADD00642E07 /* Preview Assets.xcassets */; };
+		99CA5BB02648EADD00642E07 /* Heart_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BAF2648EADD00642E07 /* Heart_TrackerTests.swift */; };
+		99CA5BBB2648EADD00642E07 /* Heart_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BBA2648EADD00642E07 /* Heart_TrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99CA5B872648EADC00642E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CA5B7B2648EADC00642E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CA5B842648EADC00642E07;
+			remoteInfo = "Heart Tracker WatchKit App";
+		};
+		99CA5B932648EADD00642E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CA5B7B2648EADC00642E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CA5B902648EADD00642E07;
+			remoteInfo = "Heart Tracker WatchKit Extension";
+		};
+		99CA5BAC2648EADD00642E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CA5B7B2648EADC00642E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CA5B902648EADD00642E07;
+			remoteInfo = "Heart Tracker WatchKit Extension";
+		};
+		99CA5BB72648EADD00642E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CA5B7B2648EADC00642E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CA5B842648EADC00642E07;
+			remoteInfo = "Heart Tracker WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99CA5BC22648EADD00642E07 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99CA5B922648EADD00642E07 /* Heart Tracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA5BC62648EADD00642E07 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				99CA5B862648EADC00642E07 /* Heart Tracker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		99CA5B812648EADC00642E07 /* Heart Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CA5B852648EADC00642E07 /* Heart Tracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Tracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CA5B8A2648EADD00642E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99CA5B8C2648EADD00642E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CA5B912648EADD00642E07 /* Heart Tracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Heart Tracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CA5B962648EADD00642E07 /* Heart_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_TrackerApp.swift; sourceTree = "<group>"; };
+		99CA5B982648EADD00642E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		99CA5B9A2648EADD00642E07 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		99CA5B9C2648EADD00642E07 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		99CA5B9E2648EADD00642E07 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		99CA5BA02648EADD00642E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99CA5BA32648EADD00642E07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99CA5BA52648EADD00642E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CA5BA62648EADD00642E07 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		99CA5BAB2648EADD00642E07 /* Heart TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heart TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CA5BAF2648EADD00642E07 /* Heart_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_TrackerTests.swift; sourceTree = "<group>"; };
+		99CA5BB12648EADD00642E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CA5BB62648EADD00642E07 /* Heart TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heart TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CA5BBA2648EADD00642E07 /* Heart_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_TrackerUITests.swift; sourceTree = "<group>"; };
+		99CA5BBC2648EADD00642E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99CA5B8E2648EADD00642E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA5BA82648EADD00642E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA5BB32648EADD00642E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99CA5B7A2648EADC00642E07 = {
+			isa = PBXGroup;
+			children = (
+				99CA5B892648EADC00642E07 /* Heart Tracker WatchKit App */,
+				99CA5B952648EADD00642E07 /* Heart Tracker WatchKit Extension */,
+				99CA5BAE2648EADD00642E07 /* Heart TrackerTests */,
+				99CA5BB92648EADD00642E07 /* Heart TrackerUITests */,
+				99CA5B822648EADC00642E07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99CA5B822648EADC00642E07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99CA5B812648EADC00642E07 /* Heart Tracker.app */,
+				99CA5B852648EADC00642E07 /* Heart Tracker WatchKit App.app */,
+				99CA5B912648EADD00642E07 /* Heart Tracker WatchKit Extension.appex */,
+				99CA5BAB2648EADD00642E07 /* Heart TrackerTests.xctest */,
+				99CA5BB62648EADD00642E07 /* Heart TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99CA5B892648EADC00642E07 /* Heart Tracker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				99CA5B8A2648EADD00642E07 /* Assets.xcassets */,
+				99CA5B8C2648EADD00642E07 /* Info.plist */,
+			);
+			path = "Heart Tracker WatchKit App";
+			sourceTree = "<group>";
+		};
+		99CA5B952648EADD00642E07 /* Heart Tracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				99CA5B962648EADD00642E07 /* Heart_TrackerApp.swift */,
+				99CA5B982648EADD00642E07 /* ContentView.swift */,
+				99CA5B9A2648EADD00642E07 /* NotificationController.swift */,
+				99CA5B9C2648EADD00642E07 /* NotificationView.swift */,
+				99CA5B9E2648EADD00642E07 /* ComplicationController.swift */,
+				99CA5BA02648EADD00642E07 /* Assets.xcassets */,
+				99CA5BA52648EADD00642E07 /* Info.plist */,
+				99CA5BA62648EADD00642E07 /* PushNotificationPayload.apns */,
+				99CA5BA22648EADD00642E07 /* Preview Content */,
+			);
+			path = "Heart Tracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		99CA5BA22648EADD00642E07 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				99CA5BA32648EADD00642E07 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99CA5BAE2648EADD00642E07 /* Heart TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				99CA5BAF2648EADD00642E07 /* Heart_TrackerTests.swift */,
+				99CA5BB12648EADD00642E07 /* Info.plist */,
+			);
+			path = "Heart TrackerTests";
+			sourceTree = "<group>";
+		};
+		99CA5BB92648EADD00642E07 /* Heart TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99CA5BBA2648EADD00642E07 /* Heart_TrackerUITests.swift */,
+				99CA5BBC2648EADD00642E07 /* Info.plist */,
+			);
+			path = "Heart TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99CA5B802648EADC00642E07 /* Heart Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CA5BC72648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart Tracker" */;
+			buildPhases = (
+				99CA5B7F2648EADC00642E07 /* Resources */,
+				99CA5BC62648EADD00642E07 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CA5B882648EADC00642E07 /* PBXTargetDependency */,
+			);
+			name = "Heart Tracker";
+			productName = "Heart Tracker";
+			productReference = 99CA5B812648EADC00642E07 /* Heart Tracker.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		99CA5B842648EADC00642E07 /* Heart Tracker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CA5BC32648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart Tracker WatchKit App" */;
+			buildPhases = (
+				99CA5B832648EADC00642E07 /* Resources */,
+				99CA5BC22648EADD00642E07 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CA5B942648EADD00642E07 /* PBXTargetDependency */,
+			);
+			name = "Heart Tracker WatchKit App";
+			productName = "Heart Tracker WatchKit App";
+			productReference = 99CA5B852648EADC00642E07 /* Heart Tracker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		99CA5B902648EADD00642E07 /* Heart Tracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CA5BBF2648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart Tracker WatchKit Extension" */;
+			buildPhases = (
+				99CA5B8D2648EADD00642E07 /* Sources */,
+				99CA5B8E2648EADD00642E07 /* Frameworks */,
+				99CA5B8F2648EADD00642E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heart Tracker WatchKit Extension";
+			productName = "Heart Tracker WatchKit Extension";
+			productReference = 99CA5B912648EADD00642E07 /* Heart Tracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		99CA5BAA2648EADD00642E07 /* Heart TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CA5BCA2648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart TrackerTests" */;
+			buildPhases = (
+				99CA5BA72648EADD00642E07 /* Sources */,
+				99CA5BA82648EADD00642E07 /* Frameworks */,
+				99CA5BA92648EADD00642E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CA5BAD2648EADD00642E07 /* PBXTargetDependency */,
+			);
+			name = "Heart TrackerTests";
+			productName = "Heart TrackerTests";
+			productReference = 99CA5BAB2648EADD00642E07 /* Heart TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99CA5BB52648EADD00642E07 /* Heart TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CA5BCD2648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart TrackerUITests" */;
+			buildPhases = (
+				99CA5BB22648EADD00642E07 /* Sources */,
+				99CA5BB32648EADD00642E07 /* Frameworks */,
+				99CA5BB42648EADD00642E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CA5BB82648EADD00642E07 /* PBXTargetDependency */,
+			);
+			name = "Heart TrackerUITests";
+			productName = "Heart TrackerUITests";
+			productReference = 99CA5BB62648EADD00642E07 /* Heart TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99CA5B7B2648EADC00642E07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					99CA5B802648EADC00642E07 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					99CA5B842648EADC00642E07 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					99CA5B902648EADD00642E07 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					99CA5BAA2648EADD00642E07 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 99CA5B902648EADD00642E07;
+					};
+					99CA5BB52648EADD00642E07 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 99CA5B842648EADC00642E07;
+					};
+				};
+			};
+			buildConfigurationList = 99CA5B7E2648EADC00642E07 /* Build configuration list for PBXProject "Heart Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99CA5B7A2648EADC00642E07;
+			productRefGroup = 99CA5B822648EADC00642E07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99CA5B802648EADC00642E07 /* Heart Tracker */,
+				99CA5B842648EADC00642E07 /* Heart Tracker WatchKit App */,
+				99CA5B902648EADD00642E07 /* Heart Tracker WatchKit Extension */,
+				99CA5BAA2648EADD00642E07 /* Heart TrackerTests */,
+				99CA5BB52648EADD00642E07 /* Heart TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99CA5B7F2648EADC00642E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA5B832648EADC00642E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CA5B8B2648EADD00642E07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA5B8F2648EADD00642E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CA5BA42648EADD00642E07 /* Preview Assets.xcassets in Resources */,
+				99CA5BA12648EADD00642E07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA5BA92648EADD00642E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA5BB42648EADD00642E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99CA5B8D2648EADD00642E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CA5B9B2648EADD00642E07 /* NotificationController.swift in Sources */,
+				99CA5B992648EADD00642E07 /* ContentView.swift in Sources */,
+				99CA5B9F2648EADD00642E07 /* ComplicationController.swift in Sources */,
+				99CA5B972648EADD00642E07 /* Heart_TrackerApp.swift in Sources */,
+				99CA5B9D2648EADD00642E07 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA5BA72648EADD00642E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CA5BB02648EADD00642E07 /* Heart_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA5BB22648EADD00642E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CA5BBB2648EADD00642E07 /* Heart_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99CA5B882648EADC00642E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CA5B842648EADC00642E07 /* Heart Tracker WatchKit App */;
+			targetProxy = 99CA5B872648EADC00642E07 /* PBXContainerItemProxy */;
+		};
+		99CA5B942648EADD00642E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CA5B902648EADD00642E07 /* Heart Tracker WatchKit Extension */;
+			targetProxy = 99CA5B932648EADD00642E07 /* PBXContainerItemProxy */;
+		};
+		99CA5BAD2648EADD00642E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CA5B902648EADD00642E07 /* Heart Tracker WatchKit Extension */;
+			targetProxy = 99CA5BAC2648EADD00642E07 /* PBXContainerItemProxy */;
+		};
+		99CA5BB82648EADD00642E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CA5B842648EADC00642E07 /* Heart Tracker WatchKit App */;
+			targetProxy = 99CA5BB72648EADD00642E07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		99CA5BBD2648EADD00642E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99CA5BBE2648EADD00642E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99CA5BC02648EADD00642E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Heart Tracker WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Heart Tracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		99CA5BC12648EADD00642E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Heart Tracker WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Heart Tracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		99CA5BC42648EADD00642E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				IBSC_MODULE = Heart_Tracker_WatchKit_Extension;
+				INFOPLIST_FILE = "Heart Tracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-Tracker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		99CA5BC52648EADD00642E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				IBSC_MODULE = Heart_Tracker_WatchKit_Extension;
+				INFOPLIST_FILE = "Heart Tracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-Tracker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		99CA5BC82648EADD00642E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		99CA5BC92648EADD00642E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		99CA5BCB2648EADD00642E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				INFOPLIST_FILE = "Heart TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heart Tracker WatchKit Extension.appex/Heart Tracker WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		99CA5BCC2648EADD00642E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				INFOPLIST_FILE = "Heart TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heart Tracker WatchKit Extension.appex/Heart Tracker WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		99CA5BCE2648EADD00642E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				INFOPLIST_FILE = "Heart TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Heart Tracker WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		99CA5BCF2648EADD00642E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KTCT87KJN7;
+				INFOPLIST_FILE = "Heart TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin.Heart-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Heart Tracker WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99CA5B7E2648EADC00642E07 /* Build configuration list for PBXProject "Heart Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CA5BBD2648EADD00642E07 /* Debug */,
+				99CA5BBE2648EADD00642E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CA5BBF2648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart Tracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CA5BC02648EADD00642E07 /* Debug */,
+				99CA5BC12648EADD00642E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CA5BC32648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart Tracker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CA5BC42648EADD00642E07 /* Debug */,
+				99CA5BC52648EADD00642E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CA5BC72648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CA5BC82648EADD00642E07 /* Debug */,
+				99CA5BC92648EADD00642E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CA5BCA2648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CA5BCB2648EADD00642E07 /* Debug */,
+				99CA5BCC2648EADD00642E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CA5BCD2648EADD00642E07 /* Build configuration list for PBXNativeTarget "Heart TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CA5BCE2648EADD00642E07 /* Debug */,
+				99CA5BCF2648EADD00642E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99CA5B7B2648EADC00642E07 /* Project object */;
+}
