@@ -9,13 +9,16 @@ import SwiftUI
 
 @main
 struct Heart_TrackerApp: App {
-    @SceneBuilder var body: some Scene {
+    // This is the business logic.
+    var workoutManager = WorkoutManager()
+
+    // Return the scene.
+    var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()
+                    .environmentObject(workoutManager)
             }
         }
-
-        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
 }

@@ -12,13 +12,18 @@
 		99CA5B922648EADD00642E07 /* Heart Tracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99CA5B912648EADD00642E07 /* Heart Tracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		99CA5B972648EADD00642E07 /* Heart_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B962648EADD00642E07 /* Heart_TrackerApp.swift */; };
 		99CA5B992648EADD00642E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B982648EADD00642E07 /* ContentView.swift */; };
-		99CA5B9B2648EADD00642E07 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B9A2648EADD00642E07 /* NotificationController.swift */; };
-		99CA5B9D2648EADD00642E07 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B9C2648EADD00642E07 /* NotificationView.swift */; };
-		99CA5B9F2648EADD00642E07 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5B9E2648EADD00642E07 /* ComplicationController.swift */; };
 		99CA5BA12648EADD00642E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CA5BA02648EADD00642E07 /* Assets.xcassets */; };
 		99CA5BA42648EADD00642E07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CA5BA32648EADD00642E07 /* Preview Assets.xcassets */; };
 		99CA5BB02648EADD00642E07 /* Heart_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BAF2648EADD00642E07 /* Heart_TrackerTests.swift */; };
 		99CA5BBB2648EADD00642E07 /* Heart_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BBA2648EADD00642E07 /* Heart_TrackerUITests.swift */; };
+		99CA5BD32648EB9300642E07 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CA5BD22648EB9300642E07 /* HealthKit.framework */; };
+		99CA5BDA2648EC0800642E07 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BD42648EC0800642E07 /* MenuButton.swift */; };
+		99CA5BDB2648EC0800642E07 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BD52648EC0800642E07 /* PagingView.swift */; };
+		99CA5BDC2648EC0800642E07 /* RunButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BD62648EC0800642E07 /* RunButton.swift */; };
+		99CA5BDD2648EC0800642E07 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BD72648EC0800642E07 /* MenuView.swift */; };
+		99CA5BDE2648EC0800642E07 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BD82648EC0800642E07 /* StartView.swift */; };
+		99CA5BDF2648EC0800642E07 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BD92648EC0800642E07 /* WorkoutManager.swift */; };
+		99CA5BE12648EC6100642E07 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA5BE02648EC6100642E07 /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,9 +90,6 @@
 		99CA5B912648EADD00642E07 /* Heart Tracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Heart Tracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CA5B962648EADD00642E07 /* Heart_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_TrackerApp.swift; sourceTree = "<group>"; };
 		99CA5B982648EADD00642E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		99CA5B9A2648EADD00642E07 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		99CA5B9C2648EADD00642E07 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		99CA5B9E2648EADD00642E07 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		99CA5BA02648EADD00642E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99CA5BA32648EADD00642E07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99CA5BA52648EADD00642E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +100,15 @@
 		99CA5BB62648EADD00642E07 /* Heart TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heart TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CA5BBA2648EADD00642E07 /* Heart_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_TrackerUITests.swift; sourceTree = "<group>"; };
 		99CA5BBC2648EADD00642E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CA5BD02648EB9300642E07 /* Heart Tracker WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Heart Tracker WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		99CA5BD22648EB9300642E07 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		99CA5BD42648EC0800642E07 /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		99CA5BD52648EC0800642E07 /* PagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		99CA5BD62648EC0800642E07 /* RunButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunButton.swift; sourceTree = "<group>"; };
+		99CA5BD72648EC0800642E07 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		99CA5BD82648EC0800642E07 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		99CA5BD92648EC0800642E07 /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		99CA5BE02648EC6100642E07 /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99CA5BD32648EB9300642E07 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,11 +140,13 @@
 		99CA5B7A2648EADC00642E07 = {
 			isa = PBXGroup;
 			children = (
+				99CA5BE02648EC6100642E07 /* WorkoutView.swift */,
 				99CA5B892648EADC00642E07 /* Heart Tracker WatchKit App */,
 				99CA5B952648EADD00642E07 /* Heart Tracker WatchKit Extension */,
 				99CA5BAE2648EADD00642E07 /* Heart TrackerTests */,
 				99CA5BB92648EADD00642E07 /* Heart TrackerUITests */,
 				99CA5B822648EADC00642E07 /* Products */,
+				99CA5BD12648EB9300642E07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,11 +174,15 @@
 		99CA5B952648EADD00642E07 /* Heart Tracker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				99CA5BD02648EB9300642E07 /* Heart Tracker WatchKit Extension.entitlements */,
 				99CA5B962648EADD00642E07 /* Heart_TrackerApp.swift */,
 				99CA5B982648EADD00642E07 /* ContentView.swift */,
-				99CA5B9A2648EADD00642E07 /* NotificationController.swift */,
-				99CA5B9C2648EADD00642E07 /* NotificationView.swift */,
-				99CA5B9E2648EADD00642E07 /* ComplicationController.swift */,
+				99CA5BD42648EC0800642E07 /* MenuButton.swift */,
+				99CA5BD72648EC0800642E07 /* MenuView.swift */,
+				99CA5BD52648EC0800642E07 /* PagingView.swift */,
+				99CA5BD62648EC0800642E07 /* RunButton.swift */,
+				99CA5BD82648EC0800642E07 /* StartView.swift */,
+				99CA5BD92648EC0800642E07 /* WorkoutManager.swift */,
 				99CA5BA02648EADD00642E07 /* Assets.xcassets */,
 				99CA5BA52648EADD00642E07 /* Info.plist */,
 				99CA5BA62648EADD00642E07 /* PushNotificationPayload.apns */,
@@ -197,6 +215,14 @@
 				99CA5BBC2648EADD00642E07 /* Info.plist */,
 			);
 			path = "Heart TrackerUITests";
+			sourceTree = "<group>";
+		};
+		99CA5BD12648EB9300642E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99CA5BD22648EB9300642E07 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,11 +411,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99CA5B9B2648EADD00642E07 /* NotificationController.swift in Sources */,
+				99CA5BDB2648EC0800642E07 /* PagingView.swift in Sources */,
+				99CA5BDD2648EC0800642E07 /* MenuView.swift in Sources */,
+				99CA5BDC2648EC0800642E07 /* RunButton.swift in Sources */,
 				99CA5B992648EADD00642E07 /* ContentView.swift in Sources */,
-				99CA5B9F2648EADD00642E07 /* ComplicationController.swift in Sources */,
+				99CA5BE12648EC6100642E07 /* WorkoutView.swift in Sources */,
 				99CA5B972648EADD00642E07 /* Heart_TrackerApp.swift in Sources */,
-				99CA5B9D2648EADD00642E07 /* NotificationView.swift in Sources */,
+				99CA5BDF2648EC0800642E07 /* WorkoutManager.swift in Sources */,
+				99CA5BDA2648EC0800642E07 /* MenuButton.swift in Sources */,
+				99CA5BDE2648EC0800642E07 /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Heart Tracker WatchKit Extension/Heart Tracker WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Heart Tracker WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = KTCT87KJN7;
@@ -577,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Heart Tracker WatchKit Extension/Heart Tracker WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Heart Tracker WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = KTCT87KJN7;
