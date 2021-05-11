@@ -61,12 +61,14 @@ class WorkoutManager: NSObject, ObservableObject {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
+        let currentTime = Int64(NSDate().timeIntervalSince1970 * 1000.0)
+        
         let json = [
-            "heartRate": heartrate,
-        ]
+            "heartRate": Int64(heartrate),
+            "timestamp": currentTime
+        ] as [String : Int64]
         
         let jsonData = try! JSONSerialization.data(withJSONObject: json, options: [])
-
         
         let task = httpSession.uploadTask(with: request, from: jsonData) { data, response, error in
 
@@ -79,11 +81,6 @@ class WorkoutManager: NSObject, ObservableObject {
                 print("Server error!")
                 return
             }
-
-//            guard let mime = response.mimeType, mime == "application/json" else {
-//                print("Wrong MIME type!")
-//                return
-//            }
 
             do {
                 let json = try JSONSerialization.jsonObject(with: data!, options: [])
