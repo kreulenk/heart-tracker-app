@@ -56,16 +56,16 @@ class WorkoutManager: NSObject, ObservableObject {
         return self.accumulatedTime + runningTime
     }
     
-    func sendRequest() -> Void {
+    func sendRequest(timestamp: Int64) -> Void {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let currentTime = Int64(NSDate().timeIntervalSince1970 * 1000.0)
+//        let currentTime = Int64(NSDate().timeIntervalSince1970 * 1000.0)
         
         let json = [
             "heartRate": Int64(heartrate),
-            "timestamp": currentTime
+            "timestamp": timestamp
         ] as [String : Int64]
         
         let jsonData = try! JSONSerialization.data(withJSONObject: json, options: [])
@@ -213,9 +213,10 @@ class WorkoutManager: NSObject, ObservableObject {
                 /// - Tag: SetLabel
                 let heartRateUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
                 let value = statistics.mostRecentQuantity()?.doubleValue(for: heartRateUnit)
+                let currentTime = Int64(statistics.endDate.timeIntervalSince1970 * 1000)
                 let roundedValue = Double( round( 1 * value! ) / 1 )
                 self.heartrate = roundedValue
-                self.sendRequest()
+                self.sendRequest(timestamp: currentTime)
             case HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned):
                 let energyUnit = HKUnit.kilocalorie()
                 let value = statistics.sumQuantity()?.doubleValue(for: energyUnit)
